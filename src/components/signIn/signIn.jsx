@@ -1,5 +1,6 @@
 import React from 'react';
 import "./signIn.css"
+import google from "../../assets/icons/google.svg"
 
 class SignIn extends React.Component {
     render() {
@@ -8,7 +9,7 @@ class SignIn extends React.Component {
                 <div className="up">
                     <h1>Вход</h1>
                     <p>Через Google Аккаунт</p>
-                    <a href="/"><img src="google.svg"/></a>
+                    <a href="/"><img src={google} alt=""/></a>
                 </div>
 
                 <p>Или</p>

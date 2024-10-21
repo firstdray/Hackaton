@@ -72,9 +72,10 @@ a:visited:hover, a:hover {
     filter: brightness(0.75);
 }
 
+/* ты ебанат Ваня viva la crate maneger */
 input:focus {
     border: 2px solid var(--button-color);
-    box-shadow: 0 0 1em var(--button-color);
+    /*box-shadow: 0 0 1em var(--button-color);*/
 }
 
 input:visited:hover, input:hover {
