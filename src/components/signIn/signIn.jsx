@@ -7,12 +7,8 @@ class SignIn extends React.Component {
             <div className="modal">
                 <div className="up">
                     <h1>Вход</h1>
-                    <p>Через социальные сети</p>
-                    <div className="socsety">
-                        <a href="/">VK</a>
-                        <a href="/">FC</a>
-                        <a href="/">TW</a>
-                    </div>
+                    <p>Через Google Аккаунт</p>
+                    <a href="/"><img src="google.svg"/></a>
                 </div>
 
                 <p>Или</p>
@@ -27,9 +23,9 @@ class SignIn extends React.Component {
                 </div>
 
                 <div className="down">
-                    <button>Войти</button>
-                    <a href="/">Забылир пароль</a>
-                    <p>Ещё нет аккаунта?<a href="/">Зарегистрируйтесь</a></p>
+                    <p><button>Войти</button></p>
+                    <p><a href="/">Забыли пароль</a></p>                    
+                    <p>Ещё нет аккаунта? <a href="/">Зарегистрируйтесь</a></p>
                 </div>
             </div>
         )
