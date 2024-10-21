@@ -1,0 +1,9 @@
+* {
+    background: rgba(143, 169, 193, 1);
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}

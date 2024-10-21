@@ -1,10 +1,17 @@
 import React from 'react';
 import "./signIn.css"
 
-const SignIn = React.Component = () => {
-    return (
-        <div></div>
-    )
+class SignIn extends React.Component {
+    render() {
+        return (
+            <div className="modal">
+                <div className="up">
+                    <h1>Вход</h1>
+                    <p>Через социальные сети</p>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default SignIn;
