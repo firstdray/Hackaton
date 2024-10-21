@@ -10,6 +10,7 @@ class SignIn extends React.Component {
                     <p>Через социальные сети</p>
                 </div>
             </div>
+
         )
     }
 }
