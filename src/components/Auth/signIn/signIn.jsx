@@ -1,6 +1,7 @@
 import React from 'react';
-import "./signIn.css"
-import google from "../../assets/icons/google.svg"
+import {Link} from 'react-router-dom';
+import "../auth.css"
+import google from "../../../assets/icons/google.svg"
 
 class SignIn extends React.Component {
     render() {
@@ -9,7 +10,7 @@ class SignIn extends React.Component {
                 <div className="up">
                     <h1>Вход</h1>
                     <p>Через Google Аккаунт</p>
-                    <a href="/"><img src={google} alt=""/></a>
+                    <a href="/public"><img src={google} alt=""/></a>
                 </div>
 
                 <p>Или</p>
@@ -25,8 +26,8 @@ class SignIn extends React.Component {
 
                 <div className="down">
                     <p><button>Войти</button></p>
-                    <p><a href="/">Забыли пароль</a></p>                    
-                    <p>Ещё нет аккаунта? <a href="/">Зарегистрируйтесь</a></p>
+                    <p><a href="/public">Забыли пароль</a></p>
+                    <p>Ещё нет аккаунта? <Link to="../signUp">Зарегистрируйтесь</Link></p>
                 </div>
             </div>
         )

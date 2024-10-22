@@ -1,12 +1,25 @@
 import React from 'react';
-import SignUp from "./components/signUp/signUp";
-import SignIn from "./components/signIn/signIn";
+import {
+    BrowserRouter as Router,
+    Routes,
+    Route,
+    Navigate
+} from "react-router-dom";
+import SignUp from "./components/Auth/signUp/signUp";
+import SignIn from "./components/Auth/signIn/signIn";
 
 function App() {
   return (
     <>
-      <SignUp />
-      <SignIn />
+      <Router>
+          <Routes>
+              <Route exact path="/" element={<SignIn />} />
+
+              <Route path="/signup" element={<SignUp />} />
+
+              <Route path="*" element={<Navigate to="/" />}/>
+          </Routes>
+      </Router>
     </>
   );
 }

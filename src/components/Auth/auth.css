@@ -1,9 +1,9 @@
 :root {
     color-scheme: light;
     font-family: sans-serif;
-    --background: #8fa9c1;
+    --background: url("../../assets/image/bg.jpg") center/cover no-repeat fixed;
     --modal: white;
-    --button-color: #ff5c57;
+    --button-color: #0084FF;
 }
 
 body {
