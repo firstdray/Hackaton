@@ -1,26 +1,78 @@
 :root {
-    color-scheme: light;
     font-family: sans-serif;
-    --background: url("../../assets/image/bg.jpg") center/cover no-repeat fixed;
+    --sign-background: url("../../assets/image/bg.jpg") center/cover no-repeat fixed;
     --modal: white;
-    --button-color: #0084FF;
-}
+    --button-color: #0084ff;
+}   
 
+html,
 body {
-    background: var(--background);
-    margin-top: 13rem;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.inp label {
+.Sign {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--sign-background);    
 }
 
-.inp {
+.Sign .modal {
+    background: var(--modal);
+    color: black;
+    display: block;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 30em;
+    margin: auto;
+    padding: 1em;
+}
+
+.Sign .modal a {
+    color: var(--button-color);
+    transition: .2s;
+}
+
+.Sign .modal a:visited:hover,
+.Sign .modal a:hover,
+.Sign .modal button:hover {
+    filter: brightness(0.75);
+}
+
+.Sign .modal button {
+    transition: .2s;
+}
+
+.Sign .modal .inp textarea,
+.Sign .modal .inp input {
+    outline: none;
+}
+
+.Sign .modal .inp input[type="text"]:hover,
+.Sign .modal .inp input[type="password"]:hover,
+.Sign .modal .inp input:focus:hover {
+    filter: brightness(0.95);
+}
+
+
+.Sign .modal .inp label {
+    display: flex;
+    user-select: none;
+}
+
+.Sign .modal .inp {
     display: flex;
     flex-direction: column;
 }
 
-.inp input {
+.Sign .modal .inp input[type="text"],
+.Sign .modal .inp input[type="password"] {
     background: #f2f2f2;
     color: #878787;
     border: 2px solid #f2f2f2;
@@ -28,19 +80,15 @@ body {
     padding: 1em;
     margin: .2em;
     transition: .2s;
+    width: 30em;
 }
 
-#root {
-    border-radius: 20px;
-    background: var(--modal);
-    color: black;
-    max-width: 30em;
-    margin: auto;
-    padding: 1em;
-    text-align: center;
+.Sign .modal .inp input[type="text"]:focus,
+.Sign .modal .inp input[type="password"]:focus {
+    border: 2px solid var(--button-color);
 }
 
-.down button {
+.Sign .modal .down button {
     background: var(--button-color);
     padding: 1em;
     border-radius: 10px;
@@ -48,36 +96,4 @@ body {
     border: none;
     padding-left: 2em;
     padding-right: 2em;
-}
-
-.modal {
-    display: block;
-    align-items: center;
-}
-
-textarea, input {
-    outline: none;
-}
-
-label {
-    user-select: none;
-}
-
-a {
-    color: var(--button-color);
-    transition: .2s;
-}
-
-a:visited:hover, a:hover {
-    filter: brightness(0.75);
-}
-
-/* ты ебанат Ваня viva la crate maneger */
-input:focus {
-    border: 2px solid var(--button-color);
-    /*box-shadow: 0 0 1em var(--button-color);*/
-}
-
-input:visited:hover, input:hover {
-    background: #ddd;
 }

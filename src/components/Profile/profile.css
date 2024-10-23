@@ -1,0 +1,114 @@
+.Profile {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    
+}
+
+.Profile .header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:white;
+    margin: auto;
+    padding: .2em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.Profile .header .dashboard-logo {
+    color: #0084ff;
+    text-decoration: none;
+}
+
+.Profile .header .header-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.Profile .header .header-buttons * {
+    margin-left: 3em;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+.Profile .header .header-buttons button {
+    background: white;
+    color: black;
+    border: 2px solid #0084ff;
+    border-radius: 1em;
+    padding: .1em 2em;
+    font-weight: bold;
+}
+
+.Profile .header .header-buttons img {
+    cursor: pointer;
+    max-width: 2.5em;
+    max-height: 2.5em;
+}
+
+
+.Profile .sidebar {
+    position: fixed;
+    top:5.5em;
+    left:0;
+    bottom:0;
+    background:white;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.Profile .sidebar button {
+    background: white;
+    padding: 0;
+    border:none;
+    cursor: pointer;
+}
+
+.Profile .sidebar button img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.Profile .main {
+    margin-top: 5.5em;
+    margin-left: 5em;
+    padding: 1em;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.Profile .main .column {
+    margin: 1em;
+    background: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    box-shadow: 0 .5em 1em .1em gray;
+    flex: 1 1 1em;
+}
+
+@media (orientation: portrait) {
+    .Profile .sidebar {
+        left:0;
+        right:0;
+        bottom:0;
+        top:calc(100vh - 5em);
+        flex-direction:row;
+    }
+    
+    .Profile .main {
+        margin-left: 0em;
+        display: block;
+    }
+}
