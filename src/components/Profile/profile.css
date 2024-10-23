@@ -5,6 +5,11 @@
     
 }
 
+img {
+    border-radius: 50%;
+}
+
+
 .Profile .header {
     position: fixed;
     top:0;
@@ -35,14 +40,6 @@
     vertical-align: middle;
 }
 
-/*.Profile .header .header-buttons button {*/
-/*    background: white;*/
-/*    color: black;*/
-/*    border: 2px solid #0084ff;*/
-/*    border-radius: 1em;*/
-/*    padding: .1em 2em;*/
-/*    font-weight: bold;*/
-/*}*/
 
 .Profile .header .header-buttons .link {
     background: white;
@@ -81,7 +78,7 @@
 .Profile .sidebar button {
     background: white;
     padding: 0;
-    border:none;
+    border: none;
     cursor: pointer;
 }
 
@@ -100,7 +97,21 @@
     flex-wrap: wrap;
 }
 
-.Profile .main .column {
+.Profile .main .greetings h3 {
+    font-size: 1.5em;
+}
+
+.Profile .main .greetings img {
+    border-radius: 0.93em;
+    width: 321px;
+    max-height: 911px;
+    height: 88.6%;
+    box-shadow: 0 .5em 1em .1em gray;
+}
+
+
+.Profile .main .column-data {
+    height: fit-content;
     margin: 1em;
     background: white;
     padding: 1em;
@@ -109,6 +120,126 @@
     border-radius: 1em;
     box-shadow: 0 .5em 1em .1em gray;
     flex: 1 1 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Profile .main .column-data h4 {
+    font-size: 1em;
+    text-align: center;
+}
+
+.Profile .main .column-data img {
+    width: 4em;
+    height: 4em;
+}
+
+.Profile .main .column-data p {
+    font-size: 1em;
+}
+.Profile .main .column-data span {
+    font-size: 1.25rem;
+}
+
+.Profile .main .column-data button {
+    background: white;
+    color: black;
+    border: 2px solid #0084ff;
+    border-radius: 1em;
+    padding: .625em 1.25em;
+    font-weight: bold;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Profile .main .column-team {
+    margin: 1em;
+    background: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    box-shadow: 0 .5em 1em .1em gray;
+    flex: 1 1 1em;
+    width: 12em;
+}
+
+.Profile .main .column-team h4 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.Profile .main .column-team .gp {
+    display: flex;
+    flex-direction: column;
+    gap: .625em;
+}
+
+.Profile .main .column-team .team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .875em;
+    justify-content: space-between;
+}
+
+.Profile .main .column-team .team img {
+    width: 4em;
+    height: 4em;
+}
+
+.Profile .main .column-team .team .desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: .18em;
+    text-align: center;
+}
+
+.Profile .main .column-team .team .desc span {
+    font-weight: bold;
+}
+
+.Profile .main .column-tasc {
+    margin: 1em;
+    background: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    box-shadow: 0 .5em 1em .1em gray;
+    flex: 1 1 1em;
+    height: fit-content;
+    width: 12em;
+}
+
+.Profile .main .column-add {
+    margin: 1em;
+    background: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    box-shadow: 0 .5em 1em .1em gray;
+    flex: 1 1 1em;
+    height: fit-content;
+    width: 12em;
+}
+
+.Profile .main .column-chat {
+    margin: 1em;
+    background: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    box-shadow: 0 .5em 1em .1em gray;
+    flex: 1 1 1em;
+    height: fit-content;
+    width: 12em;
 }
 
 @media (orientation: portrait) {
