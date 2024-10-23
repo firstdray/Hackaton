@@ -11,7 +11,7 @@ class SignIn extends React.Component {
                     <div className="up">
                         <h1>Регистрация</h1>
                         <p>Через Google Аккаунт</p>
-                        <a href="/public"><img src={google} alt=""/></a>
+                        <Link to="../profile" ><img src={google} alt=""/></Link>
                     </div>
                     <p>Или</p>
                     <div className="inp">
@@ -21,7 +21,7 @@ class SignIn extends React.Component {
                         <input type="text" placeholder="Подтвердите пароль"/>
                     </div>
                     <div className="down">
-                    <p><button>Зарегистрироваться</button></p>
+                        <Link to="../profile" ><p><button>Зарегистрироваться</button></p></Link>
                         <p>Уже есть аккаунт? <Link to="../signIn">Войдите</Link></p>
                     </div>
                 </div>

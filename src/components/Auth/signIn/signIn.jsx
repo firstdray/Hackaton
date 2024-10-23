@@ -11,7 +11,7 @@ class SignIn extends React.Component {
                     <div className="up">
                         <h1>Вход</h1>
                         <p>Через Google Аккаунт</p>
-                        <a href="/public"><img src={google} alt=""/></a>
+                        <Link to="../profile" ><img src={google} alt=""/></Link>
                     </div>
                     <p>Или</p>
                     <div className="inp">
@@ -23,9 +23,9 @@ class SignIn extends React.Component {
                         </label>
                     </div>
                     <div className="down">
-                        <p><button>Войти</button></p>
+                        <Link to="../profile" ><p><button>Войти</button></p></Link>
                         <p><a href="/public">Забыли пароль</a></p>
-                        <p>Ещё нет аккаунта? <Link to="../signUp">Зарегистрируйтесь</Link></p>
+                        <p>Ещё нет аккаунта? <Link to="../signup">Зарегистрируйтесь</Link></p>
                     </div>
                 </div>
             </div>

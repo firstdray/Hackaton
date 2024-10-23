@@ -14,13 +14,13 @@ function App() {
     <>
       <Router>
           <Routes>
-              <Route exact path="/" element={<SignIn />} />
+              <Route exact path="/signin" element={<SignIn />} />
 
               <Route path="/signup" element={<SignUp />} />
 
               <Route path="/profile" element={<Profile />} />
 
-              <Route path="*" element={<Navigate to="/" />}/>
+              <Route path="*" element={<Navigate to="/signin" />}/>
           </Routes>
       </Router>
     </>

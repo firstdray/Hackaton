@@ -35,13 +35,26 @@
     vertical-align: middle;
 }
 
-.Profile .header .header-buttons button {
+/*.Profile .header .header-buttons button {*/
+/*    background: white;*/
+/*    color: black;*/
+/*    border: 2px solid #0084ff;*/
+/*    border-radius: 1em;*/
+/*    padding: .1em 2em;*/
+/*    font-weight: bold;*/
+/*}*/
+
+.Profile .header .header-buttons .link {
     background: white;
     color: black;
     border: 2px solid #0084ff;
     border-radius: 1em;
     padding: .1em 2em;
     font-weight: bold;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
 }
 
 .Profile .header .header-buttons img {
