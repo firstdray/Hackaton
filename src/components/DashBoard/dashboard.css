@@ -1,0 +1,87 @@
+.DashBoard {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100%;
+    background: #0084FF;
+}
+
+.DashBoard .Main {
+    margin-top: 7em;
+    margin-left: 5em;
+    padding: 1em;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.DashBoard .Main .column {
+    margin: 1em;
+    background: white;
+    padding: 0;
+    box-sizing: border-box;  
+    border-radius: 1em;
+    box-shadow: 0 .5em 1em .1em gray;
+    flex: 1 1 1em;
+}
+
+.DashBoard .Main .column .column-header {
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding: .7em;
+    text-align: center;
+}
+
+.DashBoard .Main .column .column-content {
+    padding: .1em 1em;
+    margin: .5em;
+    border-radius: 1em;
+    box-shadow: 0 0 1em gray;
+}
+
+.DashBoard .Main .column .column-content button {
+    border: none;
+    border-radius:.7em;
+    padding: .8em 3em;
+}
+
+.DashBoard .Main .column .column-content .column-content-name {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.DashBoard .Main .column .column-content .column-content-name:after {
+    content: " •••";
+    cursor: pointer;
+    float: right;
+    color: lightgray;
+}
+
+.DashBoard .Main .column .column-content .column-content-boldtext {
+    font-weight: bold;
+}
+
+.DashBoard .Main .column .column-content .column-content-deadline {
+    color: #b3bd43;
+}
+
+#column-color-new {
+    background: #4256a0;
+    color: white;
+}
+
+#column-color-inprocess {
+    background: #B19221;
+    color: white;
+}
+
+#column-color-done {
+    background: #0D9F00;
+    color: white;
+}
+
+#column-color-blocked {
+    background: red;
+    color: white;
+}

@@ -9,6 +9,7 @@ import SignUp from "./components/Auth/signUp/signUp";
 import SignIn from "./components/Auth/signIn/signIn";
 import User from "./components/Profile/User/user";
 import Admin from "./components/Profile/Admin/admin";
+import DashBoard from "./components/DashBoard/dashboard";
 
 function App() {
   return (
@@ -22,6 +23,8 @@ function App() {
               <Route path="/profileuser" element={<User />} />
 
               <Route path="/profileadmin" element={<Admin />} />
+              
+              <Route path="/dashboard" element={<DashBoard />} />
 
               <Route path="*" element={<Navigate to="/signin" />}/>
           </Routes>
