@@ -15,7 +15,7 @@ img {
     top:0;
     left:0;
     right:0;
-    background:white;
+    background: white;
     margin: auto;
     padding: .2em 2em;
     display: flex;
@@ -116,9 +116,9 @@ img {
     background: white;
     padding: 1em;
     box-sizing: border-box;
-    border: 1px solid lightgray;
+    border: 1px  lightgray;
     border-radius: 1em;
-    box-shadow: 0 .5em 1em .1em gray;
+    box-shadow: 0 1.2em 1em .1em gray;
     flex: 1 1 1em;
     display: flex;
     flex-direction: column;
@@ -160,9 +160,9 @@ img {
     background: white;
     padding: 1em;
     box-sizing: border-box;
-    border: 1px solid lightgray;
+    border: 1px lightgray;
     border-radius: 1em;
-    box-shadow: 0 .5em 1em .1em gray;
+    box-shadow: 0 1.2em 1em .1em gray;
     flex: 1 1 1em;
     width: 12em;
 }
@@ -208,12 +208,118 @@ img {
     background: white;
     padding: 1em;
     box-sizing: border-box;
-    border: 1px solid lightgray;
+    border: 1px lightgray;
     border-radius: 1em;
-    box-shadow: 0 .5em 1em .1em gray;
+    box-shadow: 0 1.2em 1em .1em gray;
     flex: 1 1 1em;
-    height: fit-content;
+    height: 792px;
     width: 12em;
+    display: flex;
+    flex-direction: column;
+    gap: .625em;
+    align-items: center;
+}
+
+.Profile .main .column-tasc h4 {
+    font-size: 1em;
+    text-align: center;
+
+}
+
+.Profile .main .column-tasc button {
+    background: white;
+    color: black;
+    border: 2px solid #0084ff;
+    border-radius: 1em;
+    padding: .625em 1.25em;
+    font-weight: bold;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Profile .main .column-tasc .bot {
+    background: white;
+    color: black;
+    border: 2px solid #0084ff;
+    border-radius: .875em;
+    padding: .625em 1.25em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Profile .main .column-tasc .card {
+    background: white;
+    padding: .625em;
+    box-sizing: border-box;
+    border: 1px lightgray;
+    border-radius: 1em;
+    box-shadow: 0 1.2em 1.2em .1em gray;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.Profile .main .column-tasc .card h5 {
+    font-size: 1em;
+    margin: 0em;
+}
+
+.Profile .main .column-tasc .card .nobold {
+    font-weight: normal;
+}
+
+.Profile .main .column-tasc .card p {
+    font-size: .8em;
+    font-weight: bold;
+    margin-top: .625em;
+}
+
+.Profile .main .column-tasc .card .status-1 {
+    background: #4256A0;
+    color: white;
+    border: none;
+    border-radius: .625em;
+    padding: 1em 2.25em;
+    font-weight: bold;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Profile .main .column-tasc .card .status-2 {
+    background: #B19221;
+    color: white;
+    border: none;
+    border-radius: .625em;
+    padding: 1em 2.25em;
+    font-weight: bold;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Profile .main .column-tasc .card .team {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.Profile .main .column-tasc .card .team p {
+    font-size: .875em;
+    font-weight: bold;
+}
+
+.Profile .main .column-tasc .card span {
+    font-size: .875em;
+    color: #B3BD43;
+    margin-bottom: 1em;
 }
 
 .Profile .main .column-add {
@@ -221,9 +327,9 @@ img {
     background: white;
     padding: 1em;
     box-sizing: border-box;
-    border: 1px solid lightgray;
+    border: 1px lightgray;
     border-radius: 1em;
-    box-shadow: 0 .5em 1em .1em gray;
+    box-shadow: 0 1.2em 1em .1em gray;
     flex: 1 1 1em;
     height: fit-content;
     width: 12em;
@@ -234,9 +340,9 @@ img {
     background: white;
     padding: 1em;
     box-sizing: border-box;
-    border: 1px solid lightgray;
+    border: 1px lightgray;
     border-radius: 1em;
-    box-shadow: 0 .5em 1em .1em gray;
+    box-shadow: 0 1.2em 1em .1em gray;
     flex: 1 1 1em;
     height: fit-content;
     width: 12em;

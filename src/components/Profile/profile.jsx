@@ -4,15 +4,17 @@ import "./profile.css"
 
 import profile from "../../assets/icons/profileAct.svg"
 import dashboard from "../../assets/icons/dashboard.svg"
+import tasccard from "../../assets/icons/task-card.svg"
+
 import bg from "../../assets/image/bg.jpg"
 import userpic from "../../assets/image/userpic.png"
+
 
 import Sidebar  from "./Sidebar/sidebar";
 import Header  from "../Header/header";
 
 class Profile extends React.Component {
     render() {
-        let span = <>Дизайнер</>;
         return (
             <>
                 <div className="Profile">
@@ -97,6 +99,38 @@ class Profile extends React.Component {
 
                         <div className="column-tasc">
                             <h4>Задачи</h4>
+
+                            <div className="card">
+                                <h5>Дизайн</h5>
+                                <p className="nobold">Создайте дополнительные поля для потока платежей. Обновите систему
+                                    оформления</p>
+                                <button className="status-1">Новое</button>
+                                <div className="team">
+                                    <p>Алексей, Дмитрий</p>
+                                    <img src={tasccard} alt="..."/>
+                                </div>
+                                <p>Сложность: Низкая</p>
+                                <p>Создано: 23.06.24</p>
+                                <span>Время на выполнение: 2 дня</span>
+                                <button>Оставить комментарий</button>
+                            </div>
+
+                            <div className="card">
+                                <h5>Дизайн</h5>
+                                <p className="nobold">Создайте дополнительные поля для потока платежей. Обновите систему
+                                    оформления</p>
+                                <button className="status-2">В процессе</button>
+                                <div className="team">
+                                    <p>Артем</p>
+                                    <img src={tasccard} alt="..."/>
+                                </div>
+                                <p>Сложность: Низкая</p>
+                                <p>Создано: 23.06.24</p>
+                                <span>Время на выполнение: 4 дня</span>
+                                <button>Оставить комментарий</button>
+                            </div>
+
+                            <button className="bot">Посмотреть</button>
                         </div>
 
                         <div className="column-add">
