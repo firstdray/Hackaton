@@ -165,6 +165,9 @@ img {
     box-shadow: 0 1.2em 1em .1em gray;
     flex: 1 1 1em;
     width: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .Profile .main .column-team h4 {
@@ -184,6 +187,19 @@ img {
     align-items: center;
     gap: .875em;
     justify-content: space-between;
+}
+
+.Profile .main .column-team button {
+    background: white;
+    color: black;
+    border: 2px solid #0084ff;
+    border-radius: .875em;
+    padding: .625em 1.25em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .Profile .main .column-team .team img {
@@ -323,19 +339,122 @@ img {
 }
 
 .Profile .main .column-add {
-    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+    flex: 1 1 1em;
+    height: fit-content;
+    width: 12em;
+    gap: 1.125em;
+}
+
+.Profile .main .column-add .add {
     background: white;
     padding: 1em;
     box-sizing: border-box;
     border: 1px lightgray;
     border-radius: 1em;
     box-shadow: 0 1.2em 1em .1em gray;
+    display: flex;
+    flex-direction: column;
     flex: 1 1 1em;
+    gap: .7em;
     height: fit-content;
-    width: 12em;
+    align-items: center;
+}
+
+.Profile .main .column-add .add input {
+    padding: .5em .75em;
+    border-radius: .5em;
+    border: 1px solid lightgray;
+}
+
+.Profile .main .column-add .add button {
+    background: white;
+    color: black;
+    border: 2px solid #0084ff;
+    border-radius: .875em;
+    padding: .625em 1.25em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Profile .main .column-add .rating {
+    background: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px lightgray;
+    border-radius: 1em;
+    box-shadow: 0 1.2em 1em .1em gray;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1em;
+    gap: .7em;
+    height: fit-content;
+    align-items: center;
+}
+
+.Profile .main .column-add .rating p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.Profile .main .column-add .rating .star {
+    display: flex;
+    flex-direction: row;
+    gap: .625em;
+}
+
+.Profile .main .column-add .load {
+    background: white;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px lightgray;
+    border-radius: 1em;
+    box-shadow: 0 1.2em 1em .1em gray;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 1em;
+    gap: .7em;
+    height: fit-content;
+    align-items: center;
+}
+
+.Profile .main .column-add .load p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.Profile .main .column-add .load .report {
+    display: flex;
+    flex-direction: row;
+    gap: .625em;
+}
+
+.Profile .main .column-add .load .report p {
+    font-size: .75em;
+}
+
+.Profile .main .column-add .load button {
+    background: white;
+    color: black;
+    border: 2px solid #0084ff;
+    border-radius: .875em;
+    padding: .625em 1.25em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .Profile .main .column-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 1em;
     background: white;
     padding: 1em;
@@ -344,8 +463,13 @@ img {
     border-radius: 1em;
     box-shadow: 0 1.2em 1em .1em gray;
     flex: 1 1 1em;
-    height: fit-content;
     width: 12em;
+}
+
+.Profile .main .column-chat input {
+    padding: .5em .75em;
+    border-radius: .5em;
+    border: 1px solid lightgray;
 }
 
 @media (orientation: portrait) {

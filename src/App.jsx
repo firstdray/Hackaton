@@ -7,7 +7,8 @@ import {
 } from "react-router-dom";
 import SignUp from "./components/Auth/signUp/signUp";
 import SignIn from "./components/Auth/signIn/signIn";
-import Profile from "./components/Profile/profile";
+import User from "./components/Profile/User/user";
+import Admin from "./components/Profile/Admin/admin";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
 
               <Route path="/signup" element={<SignUp />} />
 
-              <Route path="/profile" element={<Profile />} />
+              <Route path="/profileuser" element={<User />} />
+
+              <Route path="/profileadmin" element={<Admin />} />
 
               <Route path="*" element={<Navigate to="/signin" />}/>
           </Routes>
