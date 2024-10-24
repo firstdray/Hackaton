@@ -1,3 +1,4 @@
+/* dashboard container */
 .DashBoard {
     display: flex;
     justify-content: space-between;
@@ -16,13 +17,13 @@
     flex-wrap: wrap;
 }
 
+/* dashboard columns styles */
 .DashBoard .Main .column {
     margin: 1em;
     background: white;
     padding: 0;
     box-sizing: border-box;  
     border-radius: 1em;
-    box-shadow: 0 .5em 1em .1em gray;
     flex: 1 1 1em;
 }
 
@@ -31,6 +32,7 @@
     border-top-right-radius: 1em;
     padding: .7em;
     text-align: center;
+    color: white;
 }
 
 .DashBoard .Main .column .column-content {
@@ -44,18 +46,28 @@
     border: none;
     border-radius:.7em;
     padding: .8em 3em;
+    color: white;
+    transition: .2s;
+}
+
+.DashBoard .Main .column .column-content button:hover {
+    cursor: pointer;
+    filter: brightness(0.75);
 }
 
 .DashBoard .Main .column .column-content .column-content-name {
     margin-top: 1em;
     margin-bottom: 1em;
+    transition: .2s;
 }
 
+/* parameters opposite the name position */
 .DashBoard .Main .column .column-content .column-content-name:after {
     content: " •••";
     cursor: pointer;
     float: right;
     color: lightgray;
+    
 }
 
 .DashBoard .Main .column .column-content .column-content-boldtext {
@@ -66,22 +78,11 @@
     color: #b3bd43;
 }
 
-#column-color-new {
-    background: #4256a0;
-    color: white;
-}
+/***************************
+ *  Specific color values  *
+ ***************************/
 
-#column-color-inprocess {
-    background: #B19221;
-    color: white;
-}
-
-#column-color-done {
-    background: #0D9F00;
-    color: white;
-}
-
-#column-color-blocked {
-    background: red;
-    color: white;
-}
+#column-color-new       { background: #4256a0; }
+#column-color-inprocess { background: #B19221; }
+#column-color-done      { background: #0D9F00; }
+#column-color-blocked   { background: red;     }

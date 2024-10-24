@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 /* import {Link} from 'react-router-dom'; */
 import "./profile.css"
 
+// import some vector graphics
 import profile from "../../assets/icons/profileAct.svg"
 import dashboard from "../../assets/icons/dashboard.svg"
 import tasccard from "../../assets/icons/task-card.svg"
@@ -10,10 +11,11 @@ import zvesd from "../../assets/icons/zvesd.svg"
 import report from "../../assets/icons/report.svg"
 import load from "../../assets/icons/load.svg"
 
+// raster images
 import bg from "../../assets/image/bg.jpg"
 import userpic from "../../assets/image/userpic.png"
 
-
+// some interface
 import Sidebar  from "./Sidebar/sidebar";
 import Header  from "../Header/header";
 

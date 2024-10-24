@@ -1,3 +1,4 @@
+/* basic style rules */
 :root {
     font-family: sans-serif;
     --sign-background: url("../../assets/image/bg.jpg") center/cover no-repeat fixed;
@@ -12,6 +13,7 @@ body {
     padding: 0;
 }
 
+/* sign page container */
 .Sign {
     height: 100vh;
     margin: 0;
@@ -22,6 +24,7 @@ body {
     background: var(--sign-background);    
 }
 
+/* sign modal window */
 .Sign .modal {
     background: var(--modal);
     color: black;
@@ -34,33 +37,38 @@ body {
     padding: 1em;
 }
 
+/* links in modal window */
 .Sign .modal a {
     color: var(--button-color);
     transition: .2s;
 }
 
+/* fancy style for links and buttons */
 .Sign .modal a:visited:hover,
 .Sign .modal a:hover,
 .Sign .modal button:hover {
     filter: brightness(0.75);
 }
 
+/* buttons in modal window */
 .Sign .modal button {
     transition: .2s;
 }
 
+/* remove default browser border */
 .Sign .modal .inp textarea,
 .Sign .modal .inp input {
     outline: none;
 }
 
+/* fancy effect when you move your cursor on input tag */
 .Sign .modal .inp input[type="text"]:hover,
 .Sign .modal .inp input[type="password"]:hover,
 .Sign .modal .inp input:focus:hover {
     filter: brightness(0.95);
 }
 
-
+/* remove label selection */
 .Sign .modal .inp label {
     display: flex;
     user-select: none;
@@ -71,6 +79,7 @@ body {
     flex-direction: column;
 }
 
+/* input styles */
 .Sign .modal .inp input[type="text"],
 .Sign .modal .inp input[type="password"] {
     background: #f2f2f2;

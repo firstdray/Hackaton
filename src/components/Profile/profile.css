@@ -1,3 +1,4 @@
+/* user profile container */
 .Profile {
     display: flex;
     justify-content: space-between;
@@ -9,7 +10,11 @@ img {
     border-radius: 50%;
 }
 
+input {
+    outline: none;
+}
 
+/* page header on top of page */
 .Profile .header {
     position: fixed;
     top:0;
@@ -24,9 +29,11 @@ img {
     z-index: 1000;
 }
 
+/* dashboard logotype */
 .Profile .header .dashboard-logo {
     color: #0084ff;
     text-decoration: none;
+    user-select: none;
 }
 
 .Profile .header .header-buttons {
@@ -138,6 +145,7 @@ img {
 .Profile .main .column-data p {
     font-size: 1em;
 }
+
 .Profile .main .column-data span {
     font-size: 1.25rem;
 }
@@ -239,7 +247,6 @@ img {
 .Profile .main .column-tasc h4 {
     font-size: 1em;
     text-align: center;
-
 }
 
 .Profile .main .column-tasc button {
@@ -472,6 +479,7 @@ img {
     border: 1px solid lightgray;
 }
 
+/* sidebar in bottom of screen in mobile */
 @media (orientation: portrait) {
     .Profile .sidebar {
         left:0;
